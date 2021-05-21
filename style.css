@@ -1,75 +1,78 @@
-*{
+*, body{
     margin: 0;
-    padding: 0;
-    /* margin-right: 0.3rem; */
+    padding: 0px;
 }
 
 /*---Navbar----*/
 
 .navbar{
+    box-sizing: border-box;
+    /* display: grid;
+    grid-template-columns: 20px 250px 20px;
+    grid-column-gap: 10px; */
+    /* border: 1px solid red; */
     display: flex;
-    position: absolute;
-    width: 100%;
-    height: 10vh;
-    /* background-color: cornsilk; */
-    justify-content: space-around;
-    margin-top: 10px;
-    /* z-index: 10; */
+    justify-content: space-between;
+    padding: 15px;
 }
 
-.logo{
-    display: flex;
-}
-
-.logo .icon{
+.icon{
+    box-sizing: border-box;
     width: 25px;
     height: 25px;
-    border-radius: 50px;
-    background-color:#EEA302 ;
-    margin-right: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: #EEA302;
+    flex-grow: 1;
 }
 
 .title{
-    padding-top: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    margin-right: 2px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 4px;
+    flex-grow: 2;
+}
+
+.title p{
+    font-size: 1rem;
+    color: black;
+    font-style: bold;
 }
 
 .title span{
-    color: #1b1a16;
-    font-size: 12px;
+    font-size: 0.8rem;
+    color:#323233;
+    font-style: normal;
 }
+
 
 .list{
-    width: 25px;
-    height: 25px;
-     /* background-color: aqua; */
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    flex-grow: 1;
 }
 
-button{
-    padding-top: 8px;
+.list button{
     background-color: white;
-    border: none;
+    border: white;
     outline: none;
 }
 
-i{
-    color: black;
+.list i{
+    color: #323233;
 }
 
-.logo, .list{
-    margin-top: 7px
-}
 
 
 /*----Content----*/
-
 .content{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
     position: absolute;
-    top: 15vh;
-    margin-left: 1.4rem;
-    margin-top: 1.2rem;
+    top: 10vh;
+    padding: 0 15px;
 }
 
 .content h3, .content p{
@@ -84,15 +87,18 @@ i{
     margin-right: 1rem;
 }
 
+/*---buttons---*/
+
 .btns{
     display: flex;
+    justify-content: space-between;
     position: absolute;
-    width: 100%;
-    height: 30vh;
-    margin-left: 0.2rem;
+    box-sizing: border-box;
     /* border: 1px solid red; */
-    top: 65vh;
-    justify-content: space-around;
+    width: 100%;
+    height: 7rem;
+    top: 38.5vh;
+    padding: 0 15px;
 }
 
 .btn1, .btn2, .btn3{
@@ -147,21 +153,23 @@ i{
 
 .image{
     position: absolute;
-    top: 95vh;
-    left: 12%;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    /* margin-left: 2.5rem; */
-    margin-top: 10px;
-    /* background-image: url(./Images/DSC_0064.JPG);
-    background-repeat: no-repeat; */
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    top: 58vh;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    padding: 0 15px;
 }
 
 .image img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    position: relative;
+    left: 21%;
 }
 
 
@@ -169,12 +177,14 @@ i{
 
 footer{
     position: absolute;
-    top: 160vh;
-    display: flex;
-    justify-content: space-around;
+    box-sizing: border-box;
+    top: 93vh;
+    display: grid;
+    padding: 0 15px;
+    grid-template-columns: 50% 50%;
+    /* border: 1px solid red; */
     width: 100%;
-    margin-left: 1.4rem;
-    height: 100px;
+    padding-bottom: 15px;
 
 }
 
@@ -182,14 +192,18 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-top: 8px;
 }
 
 .cls2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-top: 12px;
 }
 
 .copyright span{
@@ -215,4 +229,50 @@ footer{
 
 .phone{
     padding-top: 6.5px;
+}  
+
+
+/*--Media query----*/
+
+@media only screen and (max-width:374px)
+{
+    .navbar{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        padding: 15px;
+    }
+
+    .image img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: relative;
+        left: 15%;
+    }
+
+    footer{
+        padding-bottom: 15px;
+    }
+
+    .cls1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding-top: 8px;
+    }
+    
+    .cls2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding-top: 10px;
+    }
+
+
 }
