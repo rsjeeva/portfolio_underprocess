@@ -1,6 +1,7 @@
 *, body{
     margin: 0;
     padding: 0px;
+    background-color: #F3F3F3;
 }
 
 /*---Navbar----*/
@@ -121,32 +122,49 @@
 
 .btn1 a{
     position: absolute; 
-    top: 35%;
-    left: 13%;
+    top: 35.8%;
+    left: 2%;
+    text-align: center;
+    width: 95%;
     text-decoration: none;
     color: black;
     font-size: 1rem;
     font-weight: bold;
+    background-color: #EEA302;
+    outline: none;
+    border: none;
 }
 
 .btn2 a{
     position: absolute; 
-    top: 35%;
-    left: 13%;
+    top: 35.8%;
+    left: 2%;
+    text-align: center;
+    width: 95%;
     text-decoration: none;
     color: black;
     font-size: 1rem;
     font-weight: bold;
+    font-weight: bold;
+    background-color: #FF3B25;
+    outline: none;
+    border: none;
 }
 
 .btn3 a{
     position: absolute; 
-    top: 35%;
-    left: 13%;
+     top: 35.8%;
+    left: 2%;
+    text-align: center;
+    width: 95%;
     text-decoration: none;
     color: black;
     font-size: 1rem;
     font-weight: bold;
+    font-weight: bold;
+    background-color: #80D8DA;
+    outline: none;
+    border: none;
 }
 
 /*---Image----*/
