@@ -104,8 +104,8 @@
 .btn1, .btn2, .btn3{
     position: relative;
     margin-top: 15px;
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     /* border: 1px solid red; */
     border-radius: 50px;
     background-color: #EEA302;
